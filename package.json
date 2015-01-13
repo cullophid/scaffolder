@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node node_modules/.bin/mocha test/*.test.js",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,20 @@
   "bugs": {
     "url": "https://github.com/cullophid/scaffolder/issues"
   },
-  "homepage": "https://github.com/cullophid/scaffolder"
+  "homepage": "https://github.com/cullophid/scaffolder",
+  "dependencies": {
+    "bluebird": "^2.6.4",
+    "del": "^1.1.1",
+    "gulp": "^3.8.10",
+    "gulp-compile-handlebars": "^0.4.4",
+    "gulp-data": "^1.1.1",
+    "gulp-handlebars": "^3.0.1",
+    "gulp-rename": "^1.2.0",
+    "lodash": "^2.4.1",
+    "requireindex": "^1.1.0"
+  },
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "mocha": "^2.1.0"
+  }
 }

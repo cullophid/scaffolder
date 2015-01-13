@@ -1,0 +1,14 @@
+//# {{directives.header.name}}
+// for the {{moduleName}} module
+// {{directives.header.description}}
+
+angular.module('{{moduleName}}', [])
+.directive('{{directives.header.name}}', function() {
+  'use strict';
+  return {
+    template: '{{{directives.header.template}}}',
+    restrict: '{{directives.header.restrict}}',
+    link: function (scope, element) {
+    }
+  };
+});
